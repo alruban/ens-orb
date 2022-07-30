@@ -1,0 +1,111 @@
+/*
+|--------------------------------------------------------------------------
+| Global
+|--------------------------------------------------------------------------|
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+
+  background-color: var(--color-light-grey);
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+}
+
+button,
+input,
+select {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    background: none;
+    border: 2px solid black;
+
+    cursor: pointer;
+}
+
+input,
+textarea {
+  &:focus,
+  &:focus-visible {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+td,
+th,
+input,
+button,
+span,
+label {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  text-decoration: none;
+  font-family: var(--font-primary);
+  color: var(--color-black);
+  word-break: break-word;
+
+  user-select: none;
+}
+
+h1, h2, h3 {
+  font-size: 92px;
+}
+
+h3, h4, h5 {
+  font-size: 42px;
+}
+
+a {
+  margin-bottom: 0;
+
+  opacity: 1;
+  transition: opacity var(--transition-speed) ease-in-out;
+
+  &:hover {
+    opacity: .25;
+  }
+}
+
+ul, li {
+  list-style: none;
+}
+
+button, input {
+  padding: 10px 20px;
+
+  font-size: 14px;
+
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+  border-radius: 20px;
+  border: 0;
+
+  transition: box-shadow var(--transition-speed) ease-in-out, background-color var(--transition-speed) ease-in-out;
+
+  &:hover {
+    box-shadow: none;
+    background-color: var(--color-off-white);
+  }
+}

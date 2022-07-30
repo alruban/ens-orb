@@ -1,0 +1,22 @@
+/*
+|--------------------------------------------------------------------------
+| Container
+|--------------------------------------------------------------------------
+*/
+@mixin container {
+  max-width: var(--container-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--gutter-mobile);
+  padding-left: var(--gutter-mobile);
+
+  @media (--sm) {
+    padding-right: var(--gutter-tablet);
+    padding-left: var(--gutter-tablet);
+  }
+
+  @media (--lg) {
+    padding-right: var(--gutter-desktop);
+    padding-left: var(--gutter-desktop);
+  }
+}

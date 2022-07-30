@@ -1,0 +1,38 @@
+/*
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+| @namespace: hd-
+|
+*/
+.hd-Header {
+  position: sticky;
+  width: calc(100% - 90px);
+
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: var(--zindex-header);
+
+  padding-right: 45px;
+  padding-left: 45px;
+
+  background-color: var(--color-regular-blue);
+
+  transition: transform var(--transition-speed), border var(--transition-speed);
+
+  border-bottom: 0px solid black;
+
+  .util-Scrolled-up & {
+    border-bottom: 25px solid black;
+  }
+
+  .util-Scrolled-down & {
+    transform: translateY(calc(-100% + 25px)) !important;
+    border-bottom: 25px;
+  }
+
+  .util-Scrolled & {
+    border-bottom: 25px;
+  }
+}

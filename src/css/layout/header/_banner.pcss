@@ -1,0 +1,152 @@
+/*
+|--------------------------------------------------------------------------
+| Banner
+|--------------------------------------------------------------------------
+| @namespace: hd-
+|
+*/
+
+.hd-Banner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  transition: padding var(--transition-speed);
+
+  @media (--lg) {
+    .util-Scrolled-up & {
+      padding-top: 20px;
+      padding-bottom: 20px
+    }
+  }
+}
+
+.hd-Banner_Body {
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+}
+
+.hd-Banner_Mobile {
+  flex: 10%;
+
+  display: flex;
+  width: 30px;
+  height: 80px;
+
+  @media (--lg) {
+    display: none
+  }
+}
+
+.hd-Banner_Navigation {
+  position: relative;
+
+  display: none;
+
+  @media (--lg) {
+    flex: 30%;
+
+    display: flex;
+  }
+}
+
+.hd-Banner_Tools {
+  align-items: center;
+  justify-content: flex-end;
+  flex: 15%;
+
+  display: flex;
+
+  @media (--lg) {
+    flex: 30%;
+  }
+}
+
+.hd-Banner_Logo {
+  flex: 60%;
+  display: none;
+
+  text-align: center;
+  line-height: 1.25rem;
+
+  @media (--sm) {
+    flex: 75%;
+    justify-content: center;
+    display: flex;
+
+    font-size: 26px;
+    letter-spacing: 10px;
+  }
+
+  @media (--lg) {
+    flex: 40%;
+  }
+
+  span {
+    font-size: 0.5rem;
+    display: none;
+  }
+}
+
+.hd-Banner_Logo-mobile {
+  justify-content: center;
+  flex: 60%;
+
+  display: flex;
+
+  font-size: 1rem;
+
+  @media (--sm) {
+    display: none;
+  }
+
+  hd-Logo {
+    margin-left: 25px;
+  }
+}
+
+.hd-Banner_Icon {
+  display: block;
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.hd-Banner_Controls {
+  position: absolute;
+  margin: 25px;
+  height: 40px;
+  width: 40px;
+  top: 100%;
+  left: 25px;
+
+  opacity: 0;
+
+  transition: opacity var(--transition-speed) ease-in-out;
+
+  &:hover {
+    opacity: 1 !important;
+  }
+}
+
+.hd-Banner_Reveal {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+
+  padding: 5px;
+
+  border-radius: 5px;
+
+  background-color: var(--color-black);
+
+  cursor: pointer;
+
+  svg {
+    height: 30px;
+    width: 30px;
+  }
+}
