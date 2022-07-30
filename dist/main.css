@@ -241,7 +241,7 @@ button:hover, input:hover {
 
 .drw-Drawer_Header {
   margin: 0 30px;
-  
+
   align-items: center;
   justify-content: space-between;
 
@@ -273,7 +273,7 @@ button:hover, input:hover {
 
 .drw-Drawer_Logo {
   height: 25px;
-  
+
   color: var(--color-black);
 
   font-size: .75rem;
@@ -813,6 +813,7 @@ button:hover, input:hover {
   width: 100%;
 
   justify-content: space-between;
+  align-items: center;
   display: flex;
 }
 
@@ -833,6 +834,7 @@ button:hover, input:hover {
 
 .sec-Author_Text {
   width: 200px;
+  margin: 0;
 }
 
 @media (min-width: 500px) {

@@ -19,11 +19,9 @@ export default function Links() {
               />
             </a>
 
-            <p className="sec-Author_Text">
-              <a href="https://etherscan.io">
-                alruban.eth
-              </a>
-            </p>
+            <a className="sec-Author_Text" href="https://etherscan.io">
+              alruban.eth
+            </a>
 
             <a className="sec-Author_Link" href="https://github.com/alruban/ens-orb">
               <ReactSVG

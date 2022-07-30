@@ -228,7 +228,12 @@
   }
 
   &[ready="loading"] {
+    background-color: var(--color-orange);
     pointer-events: none;
+  }
+
+  &[ready="true"] {
+    background-color: var(--color-green);
   }
 
   &:hover {
@@ -253,6 +258,9 @@
 }
 
 .sec-Query_Response {
+  max-height: 280px;
+  overflow-y: scroll;
+
   padding-top: 20px;
   padding-bottom: 20px;
 
