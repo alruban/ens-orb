@@ -241,7 +241,7 @@ button:hover, input:hover {
 
 .drw-Drawer_Header {
   margin: 0 30px;
-
+  
   align-items: center;
   justify-content: space-between;
 
@@ -273,7 +273,7 @@ button:hover, input:hover {
 
 .drw-Drawer_Logo {
   height: 25px;
-
+  
   color: var(--color-black);
 
   font-size: .75rem;
@@ -781,8 +781,6 @@ button:hover, input:hover {
 
   font-size: 0.75rem;
   text-align: center;
-
-  opacity: .5;
 }
 
 .sec-Author_Inner {
@@ -817,16 +815,6 @@ button:hover, input:hover {
   display: flex;
 }
 
-.sec-Author_Link svg {
-  opacity: 1;
-
-  transition: opacity var(--transition-speed) ease-in-out;
-}
-
-.sec-Author_Link svg:hover {
-    opacity: .5;
-  }
-
 .sec-Author_Icon {
   height: 24px;
   width: 24px;
@@ -834,7 +822,7 @@ button:hover, input:hover {
 
 .sec-Author_Text {
   width: 200px;
-  margin: 0;
+  height: 10px;
 }
 
 @media (min-width: 500px) {
@@ -1127,7 +1115,12 @@ button:hover, input:hover {
   }
 
 .sec-Query_Download[ready="loading"] {
+    background-color: var(--color-orange);
     pointer-events: none;
+  }
+
+.sec-Query_Download[ready="true"] {
+    background-color: var(--color-green);
   }
 
 .sec-Query_Download:hover {
@@ -1151,6 +1144,9 @@ button:hover, input:hover {
 }
 
 .sec-Query_Response {
+  max-height: 280px;
+  overflow-y: scroll;
+
   padding-top: 20px;
   padding-bottom: 20px;
 

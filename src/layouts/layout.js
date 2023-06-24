@@ -36,6 +36,21 @@ import faviconAndroid96x from '/src/favicons/android-icon-96x96.png';
 import faviconAndroid144x from '/src/favicons/android-icon-144x144.png';
 import faviconAndroid192x from '/src/favicons/android-icon-192x192.png';
 
+import Analytics from 'analytics'
+import googleAnalytics from '@analytics/google-analytics'
+
+const analytics = Analytics({
+  app: 'portfolio',
+  plugins: [
+    googleAnalytics({
+      measurementIds: ["G-HT167JXW2D"]
+    })
+  ]
+});
+
+/* Track a page view */
+analytics.page();
+
 const Layout = (props) => (
   <HelmetProvider>
     <Helmet>

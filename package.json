@@ -93,7 +93,9 @@
     ]
   },
   "dependencies": {
+    "@analytics/google-analytics": "^1.0.7",
     "@babel/runtime": "^7.17.2",
+    "analytics": "^0.8.9",
     "graphql-request": "^4.0.0",
     "json2csv": "^4.5.4",
     "minimist": "^1.2.0",
