@@ -40,7 +40,7 @@ import Analytics from 'analytics'
 import googleAnalytics from '@analytics/google-analytics'
 
 const analytics = Analytics({
-  app: 'portfolio',
+  app: 'ens-orb',
   plugins: [
     googleAnalytics({
       measurementIds: ["G-HT167JXW2D"]
